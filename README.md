@@ -10,7 +10,7 @@
 
 ## Authors
 
-Furkan Ozden, Can Alkan, A. Ercument Cicek
+<a href="https://www.cs.ox.ac.uk/people/furkan.ozden/" target="_blank">**Furkan Ozden**</a> and <a href="https://www.cs.ox.ac.uk/people/peter.minary/" target="_blank">**Peter Minary**</a>
 
 ---
 
