@@ -16,6 +16,16 @@
 
 ## Questions & comments 
 
-[firstauthorname].[firstauthorsurname]@bilkent.edu.tr
+[lastauthorname].[lastauthorsurname]@cs.ox.ac.uk
+
+## Table of Contents 
+
+> Warning: Please note that crispAI software is free for academic usage, while it is licenced for commercial usage. Please get in touch for more info.
+
+- [Installation](#installation)
+- [Features](#features)
+- [Usage Example](#usage-example)
+- [Citations](#citations)
+- [License](#license)
 
 ---
