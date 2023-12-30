@@ -23,8 +23,8 @@
 > Warning: Please note that crispAI software is free for academic usage, while it is licenced for commercial usage. Please get in touch for more info.
 
 - [Installation](#installation)
-- [Features](#features)
 - [Usage Example](#usage-example)
+- [Features](#features)
 - [Citations](#citations)
 - [License](#license)
 
@@ -33,7 +33,7 @@
 
 ## Installation 
 
-# Step-1: Download and untar USCS chroms required for Cas-OFFinder (if you do not plan to use crispAI-aggregate score you can skip this step).
+### Step-1: Download and untar USCS chroms required for Cas-OFFinder (if you do not plan to use crispAI-aggregate score you can skip this step).
 
 Download target organism's chromosome FASTA files.
 
@@ -58,7 +58,20 @@ For example (human chromosomes, in POSIX environment):
 
 Move obtained directory 'ucsc_chroms' to project folder ./crispAI_score
 
-  $ mv ucsc_chroms ./crispAI_score/
+    $ mv ucsc_chroms ./crispAI_score
 
+### Step-2: Run install.sh, the script will install required packages and activate the conda environment.
+    
+    $ cd ./crispAI_score/
+    $ chmod +x install.sh
+    $ ./install.sh
+
+
+---
+
+## Usage Example 
+
+### offt-score mode: Off-target cleavage activity prediction for sgRNA-target pairs.
+
+- Input: See example_offt_input.txt file for example input.
   
-
