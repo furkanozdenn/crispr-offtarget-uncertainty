@@ -66,6 +66,8 @@ Move obtained directory 'ucsc_chroms' to project folder ./crispAI_score
     $ chmod +x install.sh
     $ ./install.sh
 
+- Note: crispAI uses R version 4.2 to annotate target sites. You should have R version 4.2 installed on your system.
+
 
 ---
 
