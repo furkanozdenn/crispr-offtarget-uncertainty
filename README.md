@@ -56,9 +56,9 @@ For example (human chromosomes, in POSIX environment):
       -rw-rw-r--.  1 user group 117473283 2009-03-21 01:01 chr13.fa
       -rw-rw-r--.  1 user group 109496538 2009-03-21 01:01 chr14.fa
 
-Move obtained directory 'ucsc_chroms' to project folder ./crispAI_score
+Move obtained directory 'ucsc_chroms' to project folder ./crispAI_score/casoffinder/
 
-    $ mv ucsc_chroms ./crispAI_score
+    $ mv ucsc_chroms ./crispAI_score/casoffinder
 
 ### Step-2: Use conda to create environment with required packages.
     
