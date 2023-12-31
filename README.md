@@ -96,6 +96,15 @@ python crispAI.py --mode offt-score --input_file example_offt_input.txt --N_samp
     - `--O`: Output file name. Default is 'crispAI_output.csv'.
     - `--gpu`: CUDA device number for GPU support. Default is -1 for CPU.
 
+- Output: The output will be a CSV file with the following columns: `target_N`, `chr`, `start`, `end`, `strand`, `target_sequence`, `mean`, `samples`, `std`. Here is an example output row:
+
+| target_N | chr | start | end | strand | target_sequence | mean | samples | std |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| GGGTGGGGGGAGTTTGCTCCNGG | chr6 | 43769554 | 43769576 | - | GGGTGGGGGGAGTTTGCTCCTGG | 62.71200180053711 | 5,86,53,0,0,220,0,0,0,16,217 | 108.10479736328125 |
+
+![Offt-Score Example](img/offt.jpg)
+
+
 ### agg-score mode: Aggregate off-target cleavage activity prediction for sgRNAs.
 
 - Input: See `example_agg_input.txt` file for example input.
@@ -113,3 +122,11 @@ python crispAI.py --mode agg-score --input_file example_agg_input.txt --N_sample
     - `--plot-agg`: Flag to plot aggregate score distribution for sgRNAs. 
 
 Replace the values in the command with your actual values when running the program. The values provided in the command are the default values. If you want to use the default values, you can omit them from the command. For example, if you want to use the default value for `--N_samples`, you can omit `--N_samples 1000` from the command. The program will automatically use the default value. If you want to use GPU, replace `-1` with your actual CUDA device number. If you want to plot the aggregate score distribution for sgRNAs in the agg-score mode, add `--plot-agg` flag.
+
+- Output: The output will be a CSV file with the following columns: `sgRNA`, `aggregate_score_mean`, `aggregate_score_median`, `aggregate_score_std`, `N-samples`. Here is an example output row:
+
+| sgRNA | aggregate_score_mean | aggregate_score_median | aggregate_score_std | N-samples |
+| --- | --- | --- | --- | --- |
+| GTCCCCTGAGCCCATTTCCTNGG | 3.7147998809814453 | 3.2274999618530273 | 1.9692000150680542 | 1.85,1.9,7.16,2.97,2.57,4.05,3.81,1.96,4.08,2.32,4.09,5.75 |
+
+![agg-score mode example image](img/agg.jpg)
