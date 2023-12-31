@@ -18,14 +18,10 @@
 
 [lastauthorname].[lastauthorsurname]@cs.ox.ac.uk
 
-## Table of Contents 
-
-> Warning: Please note that crispAI software is free for academic usage, while it is licenced for commercial usage. Please get in touch for more info.
+> Warning: Please note that crispAI software is free for academic usage and it is licenced for commercial usage. Please get in touch for more info.
 
 - [Installation](#installation)
 - [Usage](#usage)
-- [Features](#features)
-- [Citations](#citations)
 - [License](#license)
 
 ---
@@ -131,3 +127,8 @@ Replace the values in the command with your actual values when running the progr
 
 <img src="img/agg.jpg" alt="Agg-Score Example" width="400"/>
 
+## License
+
+- **[CC BY-NC-SA 2.0](https://creativecommons.org/licenses/by-nc-sa/2.0/)**
+- Copyright 2020 © DECoNT.
+- For commercial usage, please contact.
