@@ -96,9 +96,9 @@ python crispAI.py --mode offt-score --input_file example_offt_input.txt --N_samp
     - `--O`: Output file name. Default is 'crispAI_output.csv'.
     - `--gpu`: CUDA device number for GPU support. Default is -1 for CPU.
 
-- Output: The output will be a CSV file with the following columns: `target_N`, `chr`, `start`, `end`, `strand`, `target_sequence`, `mean`, `samples`, `std`. Here is an example output row:
+- Output: The output will be a CSV file with the following columns: `sgRNA`, `chr`, `start`, `end`, `strand`, `target_sequence`, `mean`, `samples`, `std`. Here is an example output row:
 
-| target_N | chr | start | end | strand | target_sequence | mean | samples | std |
+| sgRNA | chr | start | end | strand | target_sequence | mean | samples | std |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | GGGTGGGGGGAGTTTGCTCCNGG | chr6 | 43769554 | 43769576 | - | GGGTGGGGGGAGTTTGCTCCTGG | 62.71200180053711 | 5,86,53,0,0,220,0,0,0,16,217 | 108.10479736328125 |
 
