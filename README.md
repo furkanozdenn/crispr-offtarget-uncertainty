@@ -79,9 +79,37 @@ Move obtained directory 'ucsc_chroms' to project folder ./crispAI_score
 
 ---
 
-## Usage Example 
+## Usage 
 
 ### offt-score mode: Off-target cleavage activity prediction for sgRNA-target pairs.
 
-- Input: See example_offt_input.txt file for example input.
-  
+- Input: See `example_offt_input.txt` file for example input.
+- Command: 
+```bash
+python crispAI.py --mode offt-score --input_file example_offt_input.txt --N_samples 1000 --N_mismatch 4 --O crispAI_output.csv --gpu -1
+```
+- Arguments:
+    - `--mode`: Mode of operation. Default is 'offt-score'.
+    - `--input_file`: Input file name. Default is 'input.csv'.
+    - `--N_samples`: Number of samples to draw from posterior distribution. Default is 1000. Range is [100, 2000].
+    - `--N_mismatch`: Number of mismatches to search for off-target sites. Default is 4.
+    - `--O`: Output file name. Default is 'crispAI_output.csv'.
+    - `--gpu`: CUDA device number for GPU support. Default is -1 for CPU.
+
+### agg-score mode: Aggregate off-target cleavage activity prediction for sgRNAs.
+
+- Input: See `example_agg_input.txt` file for example input.
+- Command: 
+```bash
+python crispAI.py --mode agg-score --input_file example_agg_input.txt --N_samples 1000 --N_mismatch 4 --O crispAI_aggregate_output.csv --gpu -1 --plot-agg
+```
+- Arguments:
+    - `--mode`: Mode of operation. Default is 'offt-score'.
+    - `--input_file`: Input file name. Default is 'input.csv'.
+    - `--N_samples`: Number of samples to draw from posterior distribution. Default is 1000. Range is [100, 2000].
+    - `--N_mismatch`: Number of mismatches to search for off-target sites. Default is 4.
+    - `--O`: Output file name. Default is 'crispAI_output.csv'.
+    - `--gpu`: CUDA device number for GPU support. Default is -1 for CPU.
+    - `--plot-agg`: Flag to plot aggregate score distribution for sgRNAs. 
+
+Replace the values in the command with your actual values when running the program. The values provided in the command are the default values. If you want to use the default values, you can omit them from the command. For example, if you want to use the default value for `--N_samples`, you can omit `--N_samples 1000` from the command. The program will automatically use the default value. If you want to use GPU, replace `-1` with your actual CUDA device number. If you want to plot the aggregate score distribution for sgRNAs in the agg-score mode, add `--plot-agg` flag.
