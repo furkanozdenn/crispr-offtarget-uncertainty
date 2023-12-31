@@ -18,8 +18,6 @@
 
 [lastauthorname].[lastauthorsurname]@cs.ox.ac.uk
 
-> Warning: Please note that crispAI software is free for academic usage and it is licenced for commercial usage. Please get in touch for more info.
-
 - [Installation](#installation)
 - [Usage](#usage)
 - [License](#license)
@@ -131,4 +129,3 @@ Replace the values in the command with your actual values when running the progr
 
 - **[CC BY-NC-SA 2.0](https://creativecommons.org/licenses/by-nc-sa/2.0/)**
 - Copyright 2023 © crispAI.
-- For commercial usage, please contact.
