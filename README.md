@@ -23,7 +23,7 @@
 > Warning: Please note that crispAI software is free for academic usage, while it is licenced for commercial usage. Please get in touch for more info.
 
 - [Installation](#installation)
-- [Usage Example](#usage-example)
+- [Usage](#usage)
 - [Features](#features)
 - [Citations](#citations)
 - [License](#license)
@@ -31,7 +31,7 @@
 ---
 
 
-## Installation 
+## Installation
 
 ### Step-1: Download and untar USCS chroms required for Cas-OFFinder (if you do not plan to use crispAI-aggregate score you can skip this step).
 
@@ -60,13 +60,21 @@ Move obtained directory 'ucsc_chroms' to project folder ./crispAI_score
 
     $ mv ucsc_chroms ./crispAI_score
 
-### Step-2: Run install.sh, the script will install required packages and activate the conda environment.
+### Step-2: Use conda to create environment with required packages.
     
-    $ cd ./crispAI_score/
-    $ chmod +x install.sh
-    $ ./install.sh
+    $ conda env create -f env/crispAI_env.yml
+    $ conda activate crispAI_env
 
+### Step-3: Install required R packages for NuPoP library using R_environment.csv (optionally run restore_environment.R).
 - Note: crispAI uses R version 4.2 to annotate target sites. You should have R version 4.2 installed on your system.
+
+    $ cd env/
+    $ Rscript restore_environment.R
+
+
+### Step-4: Test installation by running on example input data, this will run with default parameters.
+
+    $ python crispAI.py --input_file example_offt_input.txt --mode offt-score
 
 
 ---
