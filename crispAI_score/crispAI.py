@@ -1,27 +1,5 @@
 '''
 Source code for crispAI module
-
-Use cases:
-1:  Off-target cleavage activity for sgRNA-target pair
-    - Sample posterior off-target activity distribution N times for a given sgRNA-target pair 
-    - Output either point estimate or distribution of predicted off-target activity
-
-2:  Uncertainty aware genome-wide sgRNA specificty prediction 
-    - Sample aggregate score distribution N times for a given sgRNA
-    - Output either point estimate or distribution of predicted aggregate score
-
-Input for 1:
-    - .csv file where columns  sgRNA_sequence,target_sequence,chr,start,end,strand
-    - N_samples: number of samples to draw from posterior distribution (default = 0)
-    - P: point estimate of off-target activity (default = 1)
-    - O: output file name (default = crispAI_output.csv)
-
-Input for 2:
-    - .csv file where columns are sgRNAs (required)
-    - N_samples: number of samples to draw from posterior distribution (default = 0)
-    - P: point estimate of aggregate score (default = 1)
-    - O: output file name (default = crispAI_aggregate_output.csv)
-    - N_mismatch: for aggregate score - genome-wide search for off-target sites up-to N_mismatch mismatches (default = 4, Max 6)
 '''
 
 import argparse
