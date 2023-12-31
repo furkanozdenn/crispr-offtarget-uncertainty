@@ -129,4 +129,5 @@ Replace the values in the command with your actual values when running the progr
 | --- | --- | --- | --- | --- |
 | GTCCCCTGAGCCCATTTCCTNGG | 3.7147998809814453 | 3.2274999618530273 | 1.9692000150680542 | 1.85,1.9,7.16,2.97,2.57,4.05,3.81,1.96,4.08,2.32,4.09,5.75 |
 
-![agg-score mode example image](img/agg.jpg)
+<img src="img/agg.jpg" alt="Agg-Score Example" width="400"/>
+
