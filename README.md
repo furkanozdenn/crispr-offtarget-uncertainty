@@ -130,5 +130,5 @@ Replace the values in the command with your actual values when running the progr
 ## License
 
 - **[CC BY-NC-SA 2.0](https://creativecommons.org/licenses/by-nc-sa/2.0/)**
-- Copyright 2020 © DECoNT.
+- Copyright 2023 © crispAI.
 - For commercial usage, please contact.
