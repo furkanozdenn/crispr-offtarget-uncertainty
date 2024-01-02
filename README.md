@@ -16,7 +16,7 @@
 
 ## Questions & comments 
 
-[lastauthorname].[lastauthorsurname]@cs.ox.ac.uk
+[firstauthorname].[firstauthorsurname]@cs.ox.ac.uk
 
 - [Installation](#installation)
 - [Usage](#usage)
